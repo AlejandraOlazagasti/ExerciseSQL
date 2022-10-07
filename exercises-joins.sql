@@ -87,7 +87,7 @@ SELECT clients.id, clients.first_name, clients.last_name, clients.email, account
 SELECT A.account_no, A.client_id, account_types.name FROM account_types LEFT JOIN accounts as A ON A."type" = account_types.id;
 
 -- 3
--- No me permitió usar "AS" para establecer alias a las tablas
+-- No me permitió usar "AS" para establecer alias a las tablas--
 SELECT transactions.id, transactions.amount, transactions_types."name" FROM transactions_types RIGHT JOIN transactions ON transactions_types.id = transactions.transaction_type;
 
 --4
